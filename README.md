@@ -202,10 +202,6 @@ Dove `192.168.33.10` è l'indirizzo IP della tua macchina virtuale.
    vagrant destroy
    ```
 
-## Licenza
-
-Questo progetto è sotto licenza [MIT](LICENSE).
-
 ## Contatti
 
-Per domande o suggerimenti, puoi contattarmi all'indirizzo email: tuo-email@example.com
+Per domande o suggerimenti, puoi contattarmi all'indirizzo email: alberto.perdomocarpio@samtrevano.ch
