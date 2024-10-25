@@ -1,14 +1,14 @@
 n#!/bin/bash
 
 # Aggiornamento del sistema
-sudo apt-get update -y
+apt-get update -y
 
 # Installazione di MySQL
-sudo apt-get install -y mysql-server
+apt-get install -y mysql-server
 
 # Avvio e abilitazione di MySQL
-sudo systemctl enable mysql
-sudo systemctl start mysql
+systemctl enable mysql
+systemctl start mysql
 
 # Configurazione delle variabili
 DB_NAME="DB"
@@ -16,7 +16,7 @@ DB_USER="admin"
 DB_PASS="password"
 
 # Creazione del database, delle tabelle e dell'utente con permessi
-sudo mysql -u root <<EOF
+mysql -u root <<EOF
 CREATE DATABASE IF NOT EXISTS ${DB_NAME};
 USE ${DB_NAME};
 
