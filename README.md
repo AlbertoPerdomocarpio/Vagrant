@@ -16,7 +16,7 @@ Assicurati di avere installato sul tuo sistema:
 /my-vagrant-project
 │
 ├── Vagrantfile         # Configurazione di Vagrant
-├── provision.sh        # Script di provisioning per MySQL
+├── provision_db.sh     # Script di provisioning per MySQL
 └── provision_web.sh    # Script di provisioning per Apache e PHP
 ```
 
@@ -41,7 +41,7 @@ Assicurati di avere installato sul tuo sistema:
 
 ## Dettagli dello Script di Provisioning
 
-Lo script `provision.sh` esegue le seguenti operazioni:
+Lo script `provision_db.sh` esegue le seguenti operazioni:
 
 1. **Installazione di MySQL**: Aggiorna il sistema e installa il server MySQL.
 2. **Creazione del Database**: Crea un database denominato `DB`.
@@ -50,7 +50,7 @@ Lo script `provision.sh` esegue le seguenti operazioni:
    - `orders`: per memorizzare ordini collegati ai clienti.
 4. **Creazione dell'Utente**: Crea un utente `admin` con accesso da qualsiasi host e concede tutti i privilegi sul database.
 
-### Contenuto di `provision.sh`
+### Contenuto di `provision_db.sh`
 
 ```bash
 #!/bin/bash
